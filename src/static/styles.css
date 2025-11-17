@@ -89,14 +89,16 @@ section h3 {
 
 /* Bulleted list */
 .participants-list {
-  list-style-type: disc;
-  margin-left: 20px;
-  padding-left: 8px;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 /* Individual participant badge-like list item */
 .participant-item {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   margin: 4px 8px 4px 0;
   padding: 6px 10px;
   background: #f1f5ff;
@@ -104,6 +106,25 @@ section h3 {
   border: 1px solid #e3e9ff;
   border-radius: 16px;
   font-size: 13px;
+}
+
+.participant-email {
+  display: inline-block;
+}
+
+.delete-participant {
+  background: transparent;
+  border: none;
+  color: #b00020;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 12px;
+  line-height: 1;
+}
+
+.delete-participant:hover {
+  background: rgba(176,0,32,0.08);
 }
 
 /* Fallback text when no participants */
